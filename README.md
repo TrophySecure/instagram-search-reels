@@ -1,66 +1,79 @@
-[Instagram Search Reels](https://apify.com/monumental_world/instagram-search-reels?fpr=data)
+[Instagram Search Reels](https://apify.com/iron-crawler/instagram-search-reels?fpr=data)
 
-"# Instagram Reels Export to Excel (cookieless)
+## What does Instagram Reels Scraper (Cookieless) do?
 
-## Need to download Instagram Reels data to Excel?
+Instagram Reels Scraper (Cookieless) is a powerful data extraction tool that allows you to collect comprehensive metadata from Instagram Reels without requiring login credentials or cookies. This no-login architecture means you can start scraping immediately without worrying about account restrictions, rate limits, or authentication headaches.
 
-This tool helps you extract Instagram Reels metadata and export it directly to Excel, CSV, or XML—no technical skills required! Designed specifically for social media agencies, content creators, and business owners who need to analyze trending content and engagement metrics without logging into Instagram.
+The scraper is designed for content creators, marketers, and analysts who need reliable access to Instagram Reels data for competitive analysis, trend monitoring, and content strategy development.
 
-## Step-by-Step Guide
+**Key Features:**
 
-**Step 1:** Enter your search term or keyword (like ""trending,"" ""fitness,"" or any topic you want to explore)
+- Extract Reels metadata including views, likes, and engagement metrics
+- Scrape by search terms or keywords to find trending content
+- Download video URLs and thumbnail images for offline analysis
+- Export data in JSON, CSV, or Excel formats
+- No authentication required: completely cookieless operation
+- Track viral audio trends and popular content patterns
+- Analyze creator performance and engagement rates
 
-**Step 2:** Click ""Start"" to begin scraping (No Instagram login required—completely cookieless!)
+## Why scrape Instagram Reels?
 
-**Step 3:** Download your data as Excel, CSV, or XML and open it in your favorite spreadsheet tool
+Social media content creators need to scrape Instagram Reels metadata to analyze trending content, engagement metrics, and viral audio tracks for content strategy optimization. Understanding what resonates with audiences on Instagram is critical for staying competitive and maximizing reach.
 
-## What columns will I get?
+**Primary Use Cases:**
 
-Your download will include the following columns:
+- **Content Strategy Optimization:** Identify trending topics, viral audio tracks, and successful content formats to inform your own creative direction and posting schedule
+- **Competitive Analysis:** Monitor competitor performance, engagement rates, and content strategies to benchmark your own results and discover gaps in the market
+- **Trend Research:** Track emerging trends, popular hashtags, and viral moments in real-time to capitalize on opportunities before they become oversaturated
 
-- **Reel URL** - Direct link to the Instagram Reel
-- **Author Username** - The creator's Instagram handle
-- **Author Followers** - Number of followers the creator has
-- **Reel Caption** - The text description and hashtags used
-- **Play Count** - Total number of views
-- **Likes Count** - Number of likes received
-- **Comments Count** - Number of comments on the Reel
-- **Posted Date** - When the Reel was published
-- **Reel Duration (Seconds)** - Length of the video
-- **Music Track Name** - The audio track used
-- **Music Artist Name** - Artist or creator of the audio
-- **Share Count** - Number of times the Reel was shared
+## How to scrape Instagram Reels using this tool?
 
-## How to use this data
+**Step 1: Define Your Search Term**
 
-**1. Identify Trending Audio Tracks:** Sort by play count and music track name to discover which songs are driving the most engagement. Use these viral audio tracks in your own content strategy.
+Identify the keyword, hashtag, or topic you want to explore. This could be a niche topic like ""fitness tips,"" a trending hashtag, or a specific interest area relevant to your content strategy.
 
-**2. Analyze Top Performing Content:** Filter by likes, comments, and shares to understand what types of Reels resonate with audiences. Study successful captions, video lengths, and posting patterns.
+**Step 2: Configure Input Parameters**
 
-**3. Track Competitor Performance:** Monitor specific creators or topics over time by exporting data regularly. Compare engagement metrics to benchmark your own content performance and identify content gaps.
+Enter your search query in the input field. The scraper will retrieve Reels matching your search term. Note: **1 search query ≈ 50-100 Reels** depending on content availability and Instagram's current results.
 
-## Input Settings
+**Step 3: Run and Download**
 
-**Search Term/Keyword (query):** Enter any keyword or hashtag you want to explore on Instagram Reels. For example, type ""trending"" to find popular Reels, ""fitness"" for workout content, or ""recipes"" for cooking videos. The tool will search Instagram and return matching Reels with all their metadata.
+Click ""Start"" to begin the scraping process. Once complete, download your data in your preferred format (JSON, CSV, or Excel) for analysis in spreadsheets, databases, or visualization tools.
 
-## Frequently Asked Questions
+## What are the input parameters?
 
-**Q: Do I need an Instagram account?**
+| Field | Type | Description |
+| --- | --- | --- |
+| `query` | String | Search term or keyword to find relevant Instagram Reels (e.g., ""insights"", ""travel"", ""cooking tips"") |
 
-A: No! This tool works completely cookieless, meaning you don't need to log in or provide any Instagram credentials.
+## What data can you extract?
 
-**Q: Can I open this in Google Sheets?**
+You can download the following data in JSON, CSV, or Excel formats:
 
-A: Yes, absolutely! Just upload the CSV file to Google Sheets and you can analyze your data in the cloud.
+```
+{
+  ""reel_id"": ""3179846502917364"",
+  ""user_id"": ""2845691073"",
+  ""username"": ""dance_vibes"",
+  ""video_url"": ""https://scontent.cdninstagram.com/v/t50.2886-16/405691073.mp4"",
+  ""thumbnail_url"": ""https://scontent.cdninstagram.com/v/t51.2885-15/405691073.jpg"",
+  ""view_count"": 45267,
+  ""like_count"": 3891,
+  ""duration_in_seconds"": 15.4
+}
+```
 
-**Q: How many Reels can I export at once?**
+**Extracted Fields:**
 
-A: You can configure the number of results you want. Perfect for quick research or comprehensive data collection.
-
-**Q: Is this data updated in real-time?**
-
-A: Yes, the tool scrapes live data from Instagram at the moment you run it, giving you the most current metrics available.
+- `reel_id`: Unique identifier for the Reel
+- `user_id`: Creator's Instagram user ID
+- `username`: Creator's Instagram handle
+- `video_url`: Direct link to the video file for download
+- `thumbnail_url`: Preview image URL
+- `view_count`: Total number of views
+- `like_count`: Total number of likes
+- `duration_in_seconds`: Video length in seconds
 
 ---
 
-*Keywords: instagram scraper, instagram data extractor, instagram reels scraper, export instagram followers, instagram lead generation, instagram scraping tool, instagram search scraping*"
+Whether you need an Instagram scraper for lead generation, an Instagram data extractor for market research, or an Instagram Reels scraper to export Instagram followers and analyze engagement patterns, this Instagram scraping tool provides the Instagram search scraping capabilities you need to build data-driven content strategies.
